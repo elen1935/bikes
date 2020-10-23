@@ -17,8 +17,12 @@ function showPost(post) {
     const copy = template.cloneNode(true);
 
     copy.querySelector("h4").textContent = post.model;
-    copy.querySelector(".price").textContent = post.price;
-    /*copy.querySelector(".content").innerHTML=post.content.rendered;*/
+    copy.querySelector(".price").textContent = "$" + post.price;
+    /*copy.querySelector(".colour").innerHTML = post.content.colour;*/
+   /*copy.querySelector(".in-stock").innerHTML = post.content.in_stock;*/
+
+
+    /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
 
 
     //appending
