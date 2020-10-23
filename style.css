@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+:root {
+    --color-white: #FFFFFF;
+    --color-beige: #F2EFEA;
+    --color-grey: #656565;
+    --color-burgundy: #6B0909;
+
+    --main-font: 'Lato', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.bike-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bike-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    background-color: var(--white);
+}
