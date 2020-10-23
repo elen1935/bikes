@@ -33,7 +33,7 @@ ul {
     list-style: none;
 }
 
-.bike-list{
+#bike-template{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
