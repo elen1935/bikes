@@ -1,10 +1,12 @@
 @import url("https://use.typekit.net/rac5vfy.css");
-@import url(//db.onlinewebfonts.com/c/c12446b6e33df6d909aa67c7243794ff?family=DSariW01-Black);
+@import url(//db.onlinewebfonts.com/c/db4635b7d62620a1a110b98dc7c24e36?family=DSariW01-Regular);
 
 :root {
+    --color-black: #000000;
     --color-white: #FFFFFF;
     --color-beige: #F2EFEA;
-    --color-grey: #656565;
+    --color-darkgrey: #575757;
+    --color-lightgrey: #dbdbdb;
     --color-burgundy: #6B0909;
 
     /* --main-font: 'Lato', sans-serif;
@@ -22,7 +24,7 @@ font-style: normal;*/
     padding: 0;
     box-sizing: border-box;
     /*font-family: var(--main-font);*/
-    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-family: mrs-eaves-roman-lining, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -33,10 +35,8 @@ img {
 }
 
 body {
-    background-color: var(--beige);
+    background-color: var(--color-beige);
 }
-
-
 
 ul {
     list-style: none;
@@ -44,7 +44,10 @@ ul {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 40px;
 }
 
 .bike-details {
@@ -52,11 +55,59 @@ main {
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    background-color: var(--white);
 }
+
+.bike-container {
+    background-color: var(--color-white);
+    padding: 2.5rem 0rem;
+    margin: 1.5rem;
+}
+
 
 h1 {
     /*font-family: var(--secondary-font);*/
-    font-family: dsariw01-black, sans-serif;
+    font-family: dsariw01-regular, sans-serif;
+    font-weight: bolder;
+}
+
+.brand {
+    font-family: dsariw01-regular, sans-serif;
+    color: var(--color-darkgrey);
+    font-size: 3vw;
     font-weight: bold;
+}
+
+
+.model {
+    color: var(--color-darkgrey);
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+}
+
+li {
+    font-family: dsariw01-regular, sans-serif;
+    color: var(--color-darkgrey);
+    font-size: 3vw;
+    font-style: italic;
+    padding: 1vw;
+    border-bottom: 1px solid var(--color-lightgrey);
+}
+
+.price,
+.colour,
+.in-stock {
+    color: var(--color-black);
+    font-style: italic;
+    font-size: 3.5vw;
+}
+
+button {
+    font-family: dsariw01-regular, sans-serif;
+    color: var(--color-burgundy);
+    font-size: 3vw;
+    background-color: white;
+    border: 1px solid var(--color-burgundy);
+    padding: 1vw;
+    margin-top: 2vw;
 }
