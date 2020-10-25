@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
+@import url("https://use.typekit.net/rac5vfy.css");
+@import url(//db.onlinewebfonts.com/c/c12446b6e33df6d909aa67c7243794ff?family=DSariW01-Black);
 
 :root {
     --color-white: #FFFFFF;
@@ -7,15 +7,24 @@
     --color-grey: #656565;
     --color-burgundy: #6B0909;
 
-    --main-font: 'Lato', sans-serif;
+    /* --main-font: 'Lato', sans-serif;
+    --secondary-font: 'DSari', sans-serif;*/
 }
+
+/*
+font-family: mrs-eaves-roman-all-small-ca,sans-serif;
+font-weight: 400;
+font-style: normal;*/
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--main-font);
+    /*font-family: var(--main-font);*/
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -33,15 +42,21 @@ ul {
     list-style: none;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.bike-details{
+.bike-details {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
     background-color: var(--white);
+}
+
+h1 {
+    /*font-family: var(--secondary-font);*/
+    font-family: dsariw01-black, sans-serif;
+    font-weight: bold;
 }
