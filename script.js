@@ -19,8 +19,6 @@ function showPost(post) {
 
     /*copy.querySelector(".colour").innerHTML = post.content.colour;*/
    /*copy.querySelector(".in-stock").innerHTML = post.content.in_stock;*/
-
-
     /*copy.querySelector(".content").innerHTML = post.content.rendered;*/
 
     document.querySelector("main").appendChild(clone);
